@@ -17,6 +17,7 @@ namespace OOP_Labb3_Polymorfism
         }
         public override double Area()
         {
+
             Console.WriteLine("Area of the Rectangle is: ");
             return rectangleLength * rectangleWidth;
         }
