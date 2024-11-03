@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Labb3_Polymorfism
+﻿namespace OOP_Labb3_Polymorfism
 {
     internal class Circle : Geometry
     {
-        public double CircleArea { get; set; }
+        public double CircleRadius { get; set; }
         public double Pi { get; set; }
-
+        //Constructor with set properties.
         public Circle()
         {
-            CircleArea = 4.4;
+            CircleRadius = 4.4;
             Pi = 3.14;
         }
+        //Override method with correct calculation
         public override double Area()
         {
             Console.WriteLine("Area of the Circle is: ");
-            return CircleArea * CircleArea * Pi;
+            return CircleRadius * CircleRadius * Pi;
         }
     }
 }
