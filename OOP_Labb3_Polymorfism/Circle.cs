@@ -13,7 +13,7 @@
         //Override method with correct calculation
         public override double Area()
         {
-            Console.WriteLine("Area of the Circle is: ");
+            Console.WriteLine($"Area of the Circle is: ");
             return CircleRadius * CircleRadius * Pi;
         }
     }
